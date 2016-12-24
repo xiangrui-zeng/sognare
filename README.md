@@ -1,2 +1,2 @@
 # Sognare
-The place where the dream originates.
+The place where ours dream originates.
