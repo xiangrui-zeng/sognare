@@ -9,7 +9,7 @@ var collectFormErrors = require('express-stormpath/lib/helpers').collectFormErro
  
 // Declare the schema of our form:
  
-var profileForm = forms.create({
+exports.profileForm = forms.create({
   givenName: forms.fields.string({
     required: true
   }),
@@ -24,7 +24,7 @@ var profileForm = forms.create({
 // provide the values of the fields, as well
 // as any situation-specific locals
  
-function renderForm(req,res,locals){
+exports.renderForm = function(req,res,locals){
   res.render('profile', extend({
     title: 'My Profile',
     csrfToken: req.csrfToken(),
@@ -40,7 +40,7 @@ function renderForm(req,res,locals){
 // Export a function which will create the
 // router and return it
  
-module.exports = function profile(){
+exports.profile =  function(){
  
   var router = express.Router();
  
@@ -128,6 +128,5 @@ module.exports = function profile(){
       return next(err);
     }
   });
- 
-  return router;
+
 };

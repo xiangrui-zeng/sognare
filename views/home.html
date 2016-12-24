@@ -1,0 +1,66 @@
+<html lang="en">
+
+  <head>
+    <title>Sognare</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel='stylesheet'>
+    <link href="/stylesheets/sognare.css" rel='stylesheet'>
+  </head>
+
+  <body>
+  <form id="logout" action='/logout' method='POST'>
+  <header class="bs-docs-nav navbar navbar-static-top" id="top">
+    <div class="container">
+      <div class="navbar-header">
+        <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand">Sognare</a>
+      </div>
+      <nav class="collapse navbar-collapse" id="bs-navbar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="/home">HOME</a>
+          </li>
+          <li>
+            <a href="/blog">BLOG</a>
+          </li>
+          <li>
+            <a href="./about">ABOUT</a>
+          </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/login">Login</a>
+          </li>
+          <li>
+              <a href="#" onclick="document.getElementById('logout').submit()" >Logout</a>
+
+          </li>
+          <li>
+            <a href="/register">Sign Up Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <div class="bs-docs-header" id="content" tabindex="-1">
+      <div class="container">
+        <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">S</span>
+        <p>Sign up to our Blog.</p>
+        <p>Our passion for exceptional online experiences doesn’t stop here. Sign-up to join us.</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+    </div>
+  </form>
+
+  </body>
+
+</html>
