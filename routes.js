@@ -9,6 +9,12 @@ module.exports = function (app) {
         });
     });
 
+    app.get('/about', function(req, res) {
+        res.render('contactus', {
+            title: 'Sognare'
+        });
+    });
+
 
     web(app);
     api(app);

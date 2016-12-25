@@ -19,4 +19,4 @@ var BlogSchema = new Schema({
 
 });
 
-mongoose.model('Blog', OrderSchema);
+mongoose.model('Blog', BlogSchema);
