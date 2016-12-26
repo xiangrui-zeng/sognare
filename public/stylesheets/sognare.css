@@ -1850,3 +1850,41 @@ h1[id] {
     transition: 1s;
     -webkit-transition: 1s;
 }
+
+.contact-form{ margin-top:15px;}
+.contact-form .textarea{ min-height:220px; resize:none;}
+.form-control{ box-shadow:none; border-color:#eee; height:49px;}
+.form-control:focus{ box-shadow:none; border-color: #563d7c;}
+.form-control-feedback{ line-height:50px;}
+.main-btn{ background: #51397c; border-color: #563d7c; color:#fff;}
+.main-btn:hover{ background: #563d7c;color:#fff;}
+.form-control-feedback {
+    line-height: 50px;
+    top: 0px;
+}
+
+.btn-file {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}

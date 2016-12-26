@@ -9,6 +9,18 @@ module.exports = function (app) {
         });
     });
 
+    app.get('/home', stormpath.getUser, function(req, res) {
+        res.render('home', {
+            title: 'Sognare'
+        });
+    });
+
+    app.get('/blog', function(req, res) {
+        res.render('create_blog', {
+            title: 'Sognare'
+        });
+    });
+
     app.get('/about', function(req, res) {
         res.render('contactus', {
             title: 'Sognare'
