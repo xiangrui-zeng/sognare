@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -9,45 +10,8 @@
 
   <body>
   <form id="logout" action='/logout' method='POST'>
-  <header class="bs-docs-nav navbar navbar-static-top" id="top">
-    <div class="container">
-      <div class="navbar-header">
-        <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="/" class="navbar-brand">Sognare</a>
-      </div>
-      <nav class="collapse navbar-collapse" id="bs-navbar">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="/home">HOME</a>
-          </li>
-          <li>
-            <a href="/blog">BLOG</a>
-          </li>
-          <li>
-            <a href="./about">ABOUT</a>
-          </li>
-
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="/login">Login</a>
-          </li>
-          <li>
-              <a href="#" onclick="document.getElementById('logout').submit()" >Logout</a>
-
-          </li>
-          <li>
-            <a href="/register">Sign Up Now</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Header -->
+    <% include ./commons/header_html.html %>
 
     <div class="bs-docs-header" id="content" tabindex="-1">
       <div class="container">
@@ -113,19 +77,8 @@
   </div>
 
 
-  <div class="footer">
-    <div class="footer-container">
-      <a href='#'><i class="fa fa-twitch fa-3x fa-fw"></i></a>
-      <a href='#'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
-      <a href='#'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
-      <a href='#'><i class="fa fa-youtube-play fa-3x fa-fw"></i></a>
-      <a href='#'><i class="fa fa-rss fa-3x fa-fw"></i></a>
-      <a href='#'><i class="fa fa-vine fa-3x fa-fw"></i></a>
-      <a href='#'><i class="fa fa-flickr fa-3x fa-fw"></i></a>
-      <a href='#'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
-      </span>
-    </div>
-  </div>
+  <!-- Footer -->
+  <% include ./commons/footer_html.html %>
 
   </body>
 

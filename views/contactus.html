@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,45 +8,9 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="bs-docs-nav navbar navbar-static-top" id="top">
-    <div class="container">
-        <div class="navbar-header">
-            <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">Sognare</a>
-        </div>
-        <nav class="collapse navbar-collapse" id="bs-navbar">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="/home">HOME</a>
-                </li>
-                <li>
-                    <a href="/blog">BLOG</a>
-                </li>
-                <li>
-                    <a href="./about">ABOUT</a>
-                </li>
+<!-- Header -->
+<% include ./commons/header_html.html %>
 
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="/login">Login</a>
-                </li>
-                <li>
-                    <a href="#" onclick="document.getElementById('logout').submit()" >Logout</a>
-
-                </li>
-                <li>
-                    <a href="/register">Sign Up Now</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
 <div class="jumbotron jumbotron-sm">
     <div class="container">
         <div class="row">
@@ -124,7 +89,8 @@
 </div>
 
 
-<div class="footer">
+<!-- Footer -->
+<div class="footer" style="position: fixed">
     <div class="footer-container">
         <a href='#'><i class="fa fa-twitch fa-3x fa-fw"></i></a>
         <a href='#'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
