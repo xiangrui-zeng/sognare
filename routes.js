@@ -16,13 +16,19 @@ module.exports = function (app) {
     });
 
     app.get('/blog', function(req, res) {
-        res.render('create_blog', {
+        res.render('blog_create', {
             title: 'Sognare'
         });
     });
 
     app.get('/timeline', function(req, res) {
         res.render('timeline', {
+            title: 'Sognare'
+        });
+    });
+
+    app.get('/blog_view', function(req, res) {
+        res.render('blog_view', {
             title: 'Sognare'
         });
     });
