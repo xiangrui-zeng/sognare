@@ -3,11 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel='stylesheet'>
+    <link href="/stylesheets/sognare.css" rel='stylesheet'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+            var my_posts = $("[rel=tooltip]");
+
+            var size = $(window).width();
+            for(i=0;i<my_posts.length;i++){
+                the_post = $(my_posts[i]);
+
+                if(the_post.hasClass('invert') && size >=767 ){
+                    the_post.tooltip({ placement: 'left'});
+                    the_post.css("cursor","pointer");
+                }else{
+                    the_post.tooltip({ placement: 'rigth'});
+                    the_post.css("cursor","pointer");
+                }
+            }
+        });
+    </script>
 </head>
 <body>
 
 <!-- Header -->
 <% include ./commons/header_html.html %>
+
+<div class="container">
+    <div class="page-header text-center">
+        <h1 id="timeline">Timeline</h1>
+    </div>
+    <ul class="timeline">
+        <li>
+            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <img class="img-responsive" src="/images/sample01.jpg" />
+
+                </div>
+                <div class="timeline-body">
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+                </div>
+
+                <div class="timeline-footer">
+                    <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                    <a><i class="glyphicon glyphicon-share"></i></a>
+                    <a class="pull-right">More..</a>
+                </div>
+            </div>
+        </li>
+
+        <li  class="timeline-inverted">
+            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <img class="img-responsive" src="/images/sample02.jpg"" />
+
+                </div>
+                <div class="timeline-body">
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+                </div>
+
+                <div class="timeline-footer">
+                    <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                    <a><i class="glyphicon glyphicon-share"></i></a>
+                    <a class="pull-right">More..</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <img style="min-width: 100%" class="img-responsive" src="/images/sample03.jpg" />
+
+                </div>
+                <div class="timeline-body">
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+                </div>
+
+                <div class="timeline-footer">
+                    <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                    <a><i class="glyphicon glyphicon-share"></i></a>
+                    <a class="pull-right">More..</a>
+                </div>
+            </div>
+        </li>
+
+        <li  class="timeline-inverted">
+            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+            <div class="timeline-panel">
+                <div class="timeline-body">
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+                </div>
+
+                <div class="timeline-footer">
+                    <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                    <a><i class="glyphicon glyphicon-share"></i></a>
+                    <a class="pull-right">More..</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <img class="img-responsive" src="/images/sample01.jpg" />
+
+                </div>
+                <div class="timeline-body">
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+                </div>
+
+                <div class="timeline-footer">
+                    <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                    <a><i class="glyphicon glyphicon-share"></i></a>
+                    <a class="pull-right">More..</a>
+                </div>
+            </div>
+        </li>
+
+        <li  class="timeline-inverted">
+            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <img class="img-responsive" src="/images/sample02.jpg" />
+
+                </div>
+                <div class="timeline-body">
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+                </div>
+
+                <div class="timeline-footer primary">
+                    <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                    <a><i class="glyphicon glyphicon-share"></i></a>
+                    <a class="pull-right">More..</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+            <div class="timeline-panel">
+                <div class="timeline-body">
+                    <p><b>All the credits go to <a href="http://bootsnipp.com/rafamaciel">Rafamaciel</a></b></p>
+                    <p>I only make it responsive and remove the empty spaces to be more like Facebook timeline!</p>
+                </div>
+
+                <div class="timeline-footer primary">
+                    <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                    <a><i class="glyphicon glyphicon-share"></i></a>
+                    <a class="pull-right">More..</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="clearfix" style="float: none;"></li>
+    </ul>
+</div>
 
 </body>
 </html>

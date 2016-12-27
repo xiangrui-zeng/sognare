@@ -21,6 +21,12 @@ module.exports = function (app) {
         });
     });
 
+    app.get('/timeline', function(req, res) {
+        res.render('timeline', {
+            title: 'Sognare'
+        });
+    });
+
     app.get('/about', function(req, res) {
         res.render('contactus', {
             title: 'Sognare'
