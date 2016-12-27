@@ -4,8 +4,10 @@ var ObjectId = Schema.ObjectId;
 
 var BlogSchema = new Schema({
     id        :     {type: ObjectId, index: true},
-    title     :     {type: String},
-    content   :     {type: Stirng},
+    main_title     :     {type: String},
+    sub_title     :     {type: String},
+    content   :     {type: String},
+    cover_img     :     {type: String},
     createdate:     {type: Date, default: Date.now },
     updatedate:     {type: Date, default: Date.now },
     creator_info:   {
@@ -18,5 +20,18 @@ var BlogSchema = new Schema({
     }
 
 });
+
+function model() {
+    //TODO database connection
+    return connection;
+}
+
+exports.newBlog = function (json, callback) {
+    //TODO log
+    var blog = model();
+    blog.insert(json, function (err, result) {
+        callback(err, result);
+    })
+}
 
 mongoose.model('Blog', BlogSchema);

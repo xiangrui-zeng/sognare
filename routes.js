@@ -1,5 +1,6 @@
 var stormpath = require('express-stormpath');
-var profile = require('./controllers/profile');
+var profile = require('./apis/profile.js');
+var blog = require('./apis/blog.js');
 
 module.exports = function (app) {
 
@@ -37,6 +38,11 @@ module.exports = function (app) {
         res.render('contactus', {
             title: 'Sognare'
         });
+    });
+
+
+    app.post('/blog/new_blog', function (req, res) {
+        blog.newBlog(req, res);
     });
 
 
