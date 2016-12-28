@@ -5,14 +5,22 @@
 
 "use strict";
 
-var Blog = require('../modules/mod_blog.js');
+var Blog = require('../modules/mod_blog');
 
 exports.newBlog = function (jsonData, callback) {
     //TODO: log
 
     //TODO: Auth Check and logic check
 
-    var newBlog = new Blog(jsonData);
+     var newBlog = new Blog(jsonData);
 
-    newBlog.save(callback);
+     console.log(newBlog);
+    newBlog.save(function (err, result) {
+        if (err) {
+            //TODO log
+            // throw  err;
+            console.log("Create Error");
+        }
+        callback(err, result);
+    });
 };

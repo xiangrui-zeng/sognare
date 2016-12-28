@@ -32,8 +32,6 @@ app.use(express_session({
         host: dbConf.host,
         port: dbConf.port,
         db: dbConf.dbname
-
-
     })
 }));
 

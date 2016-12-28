@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
+mongoose.Promise = require('bluebird');
 
 var BlogSchema = new Schema({
     id        :     {type: ObjectId, index: true},
@@ -13,25 +14,17 @@ var BlogSchema = new Schema({
     creator_info:   {
             name: {type: String},
             sex: {type: String},
-            age_type: {type: String},
+            age: {type: String},
             tel: {type: String},
-            id: {type: String},
+            id: {type: Number},
             tips: {type: String}
     }
 
 });
 
-function model() {
-    //TODO database connection
-    return connection;
-}
+mongoose.connect('mongodb://localhost/sognare');
 
-exports.newBlog = function (json, callback) {
-    //TODO log
-    var blog = model();
-    blog.insert(json, function (err, result) {
-        callback(err, result);
-    })
-}
+var Blog = mongoose.model('Blog', BlogSchema);
 
-mongoose.model('Blog', BlogSchema);
+module.exports = Blog;
+
