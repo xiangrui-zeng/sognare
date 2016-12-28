@@ -4,12 +4,14 @@ exports.newBlog = function (req, res) {
     // var jsonData = convertReqToJson(req, res);
     //TODO check
     //TODO log
+    var test = req.body;
+    console.log("output req body");
+    console.log(test);
 
     var jsonData = {};
     //just for test
-    jsonData.main_title = "Main Title";
-    jsonData.main_title = "Main Title";
-    jsonData.sub_title = "Sub Title";
+    jsonData.title = "Main Title";
+    jsonData.discription = "Main Title";
     jsonData.content = "This is An article";
     jsonData.cover_img = "";
     jsonData.createdate = "20161228";

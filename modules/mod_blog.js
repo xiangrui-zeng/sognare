@@ -5,8 +5,8 @@ mongoose.Promise = require('bluebird');
 
 var BlogSchema = new Schema({
     id        :     {type: ObjectId, index: true},
-    main_title     :     {type: String},
-    sub_title     :     {type: String},
+    title     :     {type: String},
+    discription     :     {type: String},
     content   :     {type: String},
     cover_img     :     {type: String},
     createdate:     {type: Date, default: Date.now },

@@ -1,4 +1,4 @@
-$('#contact-form').bootstrapValidator({
+$('#create-blog-form').bootstrapValidator({
 //        live: 'disabled',
     message: 'This value is not valid',
     feedbackIcons: {
@@ -33,3 +33,7 @@ $('#contact-form').bootstrapValidator({
         }
     }
 });
+
+function logout() {
+    document.getElementById("logout").submit();
+}

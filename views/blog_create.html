@@ -7,8 +7,8 @@
     <link href="/stylesheets/sognare.css" rel='stylesheet'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="/javascripts/jquery-3.1.1.min.js" ></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
     <script type="text/javascript" src="/javascripts/sognare.js" ></script>
     <script>
         $(document).ready( function() {
@@ -66,7 +66,7 @@
 </div>
 <div class="container" style="margin-bottom: 20px">
     <div class="row">
-        <form role="form" id="contact-form" class="contact-form">
+        <form role="form" id="create-blog-form" class="contact-form" action="/blog/new_blog" method="POST">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
@@ -86,19 +86,26 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="Title" autocomplete="off" id="Title" placeholder="Title">
+                        <input type="text" class="form-control" name="title" autocomplete="off" id="Title" placeholder="Title">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="Tags" autocomplete="off" id="Tags" placeholder="Tags">
+                        <input type="text" class="form-control" name="tags" autocomplete="off" id="Tags" placeholder="Tags">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <textarea class="form-control textarea" rows="3" name="Article" id="Article" placeholder="Article"></textarea>
+                        <textarea style="min-height: 110px" class="form-control textarea" rows="3" name="discription" id="Discription" placeholder="Discription"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <textarea class="form-control textarea" rows="3" name="Article" id="content" placeholder="Article"></textarea>
                     </div>
                 </div>
             </div>

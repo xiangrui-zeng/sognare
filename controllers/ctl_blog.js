@@ -14,7 +14,7 @@ exports.newBlog = function (jsonData, callback) {
 
      var newBlog = new Blog(jsonData);
 
-     console.log(newBlog);
+     // console.log(newBlog);
     newBlog.save(function (err, result) {
         if (err) {
             //TODO log
